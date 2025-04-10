@@ -1,5 +1,5 @@
 # pie-at-home
-"lackluster"
+***"lackluster"***
 
 A volunteer computing project where multiple clients can contribute into the calcuation of pi (Our goal is 400 trillion digits)  
 
@@ -15,7 +15,12 @@ The client side: calculates Pi using algorithm in number ranges (0-1000, 1001-20
 (which are just the number ranges of pi the computer has to calcuate) that are dynamically adjusted according to the computer's specs.  
 
 The server side: gives out tasks that are calcuated and the result of those tasks are pieced by the server and put in a file, I believe the only big  
-thing the server would really require is storage for the digits, but maybe if enough people download it, the server might get a decent load, maybe even overload.  
+thing the server would really require is storage for the digits.
 
 This however poses a problem, which being, the verification of the digits recieved, bad actors could try to change the correct digits to incorrect ones,  
 OR the computer may compute incorrect digits. (This problem will currently be ignored until the server is finished.)
+
+### Current possible solutions
+
+* Multiple clients given the same task (majority wins)
+* Honeypots (fake tasks with known digits)
