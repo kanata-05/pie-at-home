@@ -3,7 +3,7 @@
 
 A volunteer computing project where multiple clients can contribute into the calcuation of pi (Our goal is 400 trillion digits)  
 
-This program will use variants Bailey–Borwein–Plouffe formula (or BBP) since it has the ability to  
+This program will use variants of the Bailey–Borwein–Plouffe formula since they has the ability to  
 calcuate any digit of pi without having to calcuate the preceding digits, this ability is what  
 will enable us to distribute the computation tasks across devices.  
 
