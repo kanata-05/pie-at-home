@@ -1,6 +1,14 @@
 # pie-at-home
 ***"lackluster"***
 
+>[!WARNING]
+> This is being developed, expect horrible and slow code.
+
+>[!NOTE]
+> If you find some code that attempts to access a function  
+> which doesn't exist, it's probably because I forgot to  
+> `#include` the library, this is being developed anyways.
+
 A volunteer computing project where multiple clients can contribute into the calcuation of pi (Our goal is 400 trillion digits)  
 
 This program will use variants of the Bailey–Borwein–Plouffe formula since they has the ability to  
@@ -18,9 +26,10 @@ The server side: gives out tasks that are calcuated and the result of those task
 thing the server would really require is storage for the digits.
 
 This however poses a problem, which being, the verification of the digits recieved, bad actors could try to change the correct digits to incorrect ones,  
-OR the computer may compute incorrect digits. (This problem will currently be ignored until the server is finished.)
+OR the computer may compute incorrect digits. Currently we're going with re-checking, checking random digits out of the computed sequence.
 
 ### Current possible solutions
 
 * Multiple clients given the same task (majority wins)
 * Honeypots (fake tasks with known digits)
+* Re-checking (checking random digits)
